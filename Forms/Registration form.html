@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-container {
+            width: 500px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-title {
+            text-align: center;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 5px;
+            border: 1px solid #999;
+        }
+        
+        .label-cell {
+            background-color: #ddd;
+            width: 150px;
+            font-weight: bold;
+            padding: 8px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 5px;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .hobbies-input input {
+            width: 30%;
+            margin-right: 5px;
+        }
+        
+        .button-group {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        button {
+            margin: 0 10px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Registration form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="label-cell">Enter your first name</td>
+                    <td><input type="text" placeholder="enter your first name" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Enter your last name</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Enter your password</td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">ReEnter your password</td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Enter your email</td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Enter your mobile</td>
+                    <td><input type="tel" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Enter your address</td>
+                    <td><textarea required></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Select your gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Select your hobbies</td>
+                    <td class="hobbies-input">
+                        <input type="text" placeholder="hobby1">
+                        <input type="text" placeholder="hobby2">
+                        <input type="text" placeholder="hobby3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Select your DOB</td>
+                    <td><input type="text" placeholder="dd-mm-yyyy" required></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Select your Country</td>
+                    <td>
+                        <select required>
+                            <option value="">Select your country ▼</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Upload your pic</td>
+                    <td><input type="file" accept="image/*"></td>
+                </tr>
+            </table>
+            <div class="button-group">
+                <button type="submit">Save My Data</button>
+                <button type="reset">Reset Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

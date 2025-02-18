@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .company, .school {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .date {
+            color: #7f8c8d;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill {
+            background: #f0f2f5;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .experience-header, .education-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name">Pranav Hirulkar</h1>
+            <div class="title">MERN Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:email@example.com">pranavhirulkar4@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+91-9604624267</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Nagpur, Maharashtra</span>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://www.linkedin.com/in/pranav-hirulkar-b7a5a9222/">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Highly motivated Artificial Intelligence Engineer with a strong foundation in software development, machine learning, and data analysis. Proficient in Python, TensorFlow, and Scikit-learn, with hands-on experience in developing and deploying AI models. Demonstrated ability to design, build, test, and implement scalable applications that meet business requirements. Excellent analytical and problem-solving skills, coupled with a commitment to delivering high-quality code in dynamic environments.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Babhale Infotech Solutions</div>
+                    <div class="date">December 2024-Present</div>
+                </div>
+                <div class="position">MERN Stack Developer Intern</div>
+                <ul>
+                    <li>Developed and maintained full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+                    </li>
+                    <li>Designed and implemented RESTful APIs to enable seamless communication between the front-end and back-end systems.</li>
+                    <li>Collaborated with cross-functional teams, including designers and product managers, to deliver user-friendly and responsive web interfaces.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="company">Systecks Solutions</div>
+                    <div class="date">Jun 2024 - July 2024</div>
+                </div>
+                <div class="position">Python Developer</div>
+                <ul>
+                    <li>Developed web and Android application solutions for startups and businesses.</li>
+                    <li>Contributed to the design, development, and maintenance of application features.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="school">GH Raisoni College of Engineering and Management, Nagpur</div>
+                    <div class="date">2021-Present</div>
+                </div>
+                <div>Bachelor's Degree in Artificial  Intelligence</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">MongoDB</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
